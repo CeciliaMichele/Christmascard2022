@@ -1,9 +1,16 @@
+/* eslint-disable linebreak-style */
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Front } from 'components/Front';
+import { Back } from 'components/Back';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/front" element={<Front />} />
+        <Route path="/back" element={<Back />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
