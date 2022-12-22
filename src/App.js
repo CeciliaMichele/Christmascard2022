@@ -10,7 +10,7 @@ export const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Front />} />
-        <Route path="/back" element={<Back />} />
+        <Route path="/Back" element={<Back />} />
       </Routes>
     </BrowserRouter>
   )
