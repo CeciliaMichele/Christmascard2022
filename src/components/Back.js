@@ -4,16 +4,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { Wrapper } from './GlobalStyling'
+import { Wrapper, Text, ProfileImage } from './GlobalStyling'
+import bakar from '../images/bakar.jpg'
 
 export const Back = () => {
   return (
     <Wrapper>
       <Container>
         <div className="bg">
-          <Greeting>
-            hej
-          </Greeting>
+          <ProfileImage src={bakar} alt="Alissa bakar" />
+          <Text>God jul och gott nytt år önskar Cecilia, Jonatan och Alissa. </Text>
           <div className="centerer">
             <a href="/" className="button">Vänd på kortet</a>
           </div>
@@ -22,12 +22,6 @@ export const Back = () => {
     </Wrapper>
   )
 }
-
-const Greeting = styled.div`
-background-color: white;
-height: 60%;
-width: 60%;
-`
 
 const Container = styled.div`
 width: 80%;

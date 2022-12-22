@@ -4,15 +4,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Alissa from '../images/Alissa.jpg'
-import { Wrapper, Text } from './GlobalStyling'
+import Alissanisse from '../images/Alissanisse.jpg'
+import { Wrapper, Text, ProfileImage } from './GlobalStyling'
 
 export const Front = () => {
   return (
     <Wrapper>
       <Container>
         <div className="bg">
-          <ProfileImage src={Alissa} alt="Picture of Cecilia" />
+          <ProfileImage src={Alissanisse} alt="Picture of Alissa" />
           <Text>God jul</Text>
           <div className="centerer">
             <a href="/back" className="button">Vänd på kortet</a>
@@ -22,13 +22,6 @@ export const Front = () => {
     </Wrapper>
   )
 }
-
-const ProfileImage = styled.img`
-width: 90%;
-@media (min-width: 1025px) {
-  width: 80%;
-  }
-`
 
 const Container = styled.div`
 width: 80%;
