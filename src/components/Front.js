@@ -15,7 +15,7 @@ export const Front = () => {
           <ProfileImage src={Alissanisse} alt="Picture of Alissa" />
           <Text>God jul</Text>
           <div className="centerer">
-            <a href="/Back" className="button">Vänd på kortet</a>
+            <a href="/back" className="button">Vänd på kortet</a>
           </div>
         </div>
       </Container>
